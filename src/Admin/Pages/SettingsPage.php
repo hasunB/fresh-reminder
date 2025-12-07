@@ -83,10 +83,11 @@ if ( isset( $_POST['fresre_save'] ) && check_admin_referer( 'fresre_settings', '
         wp_schedule_event( time(), $fresre_schedule, 'fresre_check_event' );
     }
 
+    wp_add_inline_script( 'fresre-settings-js', 'jQuery(document).ready(function(){ showSuccessMessage(); });');
+
     // Success JS (ok)
     $fresre_settings = $fresre_new;
 }
-
 
 ?>
 
@@ -281,7 +282,7 @@ if ( isset( $_POST['fresre_save'] ) && check_admin_referer( 'fresre_settings', '
                                 </tr>
                                 <tr>
                                     <th>License</th>
-                                    <td><a href="https://github.com/hasunB/fresh-reminder?tab=GPL-3.0-1-ov-file#readme" target="_blank">GPLv2</a> or later</td>
+                                    <td><a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPLv3</a> or later</td>
                                 </tr>
                                 <tr>
                                     <th>GitHub</th>

@@ -27,11 +27,35 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [1.1.1] - 2025-11-09
+## [1.1.1] - 2025-11-07
 ### ✨ Wordpress Standard Code update
-- Added the manual libraries for worspress plugin standards.
-- Created a new logging utility class FR_Logger to handle logging messages to a specified log file when WP_DEBUG is enabled.
-- Add Font Awesome v4 compatibility WOFF2 font file.
+- Fixed responsive layout issues on dashboard and widget interfaces.
+- Resolved core function errors affecting freshness status calculations.
+- Added a custom admin menu icon for better WordPress integration.
+- Improved admin navbar display with modern styling and adaptive design.
+- Fixed misaligned dashboard elements on smaller viewports.
+- Fixed caching issue causing delayed freshness updates.
+- Fixed admin icon not showing in some themes.
+- Minor CSS and JS refactoring to ensure consistent UI behavior.
+
+---
+
+## [1.1.2] – 2025-11-09
+### ✨ WordPress Standard Code Update
+- Added manual library integration for plugin standards compliance.
+- Introduced `FR_Logger` class for structured logging (active only when `WP_DEBUG` is enabled).
+- Added Font Awesome v4 compatibility with local WOFF2 font file.
+
+---
+
+## [1.1.4] – 2025-12-06
+- Added proper plugin prefix to all functions, classes, options, scripts, and AJAX actions.
+- Added `ABSPATH` protection to all PHP files for improved security.
+- Updated outdated Bootstrap JavaScript file to the latest stable version.
+- Fixed license mismatch — readme.txt and LICENSE now both correctly declare GPLv2 or later.
+- Added plugin author to the Contributors list in readme.txt.
+- Replaced inline `<script>` and `<style>` tags in admin pages with properly enqueued files following WordPress standards.
+- Updated logger system — logs are now stored safely inside the uploads directory instead of the root/content folder.
 
 ---
 

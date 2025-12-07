@@ -58,4 +58,15 @@ jQuery(function ($) {
         // On initial page load, apply the rules based on the saved
         applyRulesAndValidate();
     }
+
 });
+
+function showSuccessMessage() {
+    var successMsg = document.querySelector('.settings-msg.success');
+    if (successMsg) {
+        successMsg.classList.add('msg-visible');
+        setTimeout(function() {
+            successMsg.classList.remove('msg-visible');
+        }, 4000);
+    }
+}
