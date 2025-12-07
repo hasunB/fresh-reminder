@@ -18,8 +18,6 @@ class FRESRE_admin
         // ensure cron handler attached when admin loads
         add_action('fresre_check_event', array('FRESRE_Cron', 'check_stale_posts'));
         add_action('fresre_clear_reviewed_event', array('FRESRE_Cron', 'remove_reviewed_content'));
-        // do_action('fresre_check_event');
-        // do_action('fresre_clear_reviewed_event');
     }
 
     public static function add_admin_menu()
